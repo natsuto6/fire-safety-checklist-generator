@@ -1,6 +1,6 @@
 {
   "name": "fire-safety-checklist-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "A tool for generating fire safety checklists.",
   "main": "index.js",
