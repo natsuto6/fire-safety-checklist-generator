@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { generateChecklist } from "./generateChecklist.js";
 import { saveChecklist } from "./saveChecklist.js";
 import { evaluateChecklist } from "./evaluateChecklist.js";
