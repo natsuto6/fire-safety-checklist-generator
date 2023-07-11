@@ -1,14 +1,13 @@
 #!/usr/bin/env node
 
-import { generateChecklist } from "./generateChecklist.js";
-import { saveChecklist } from "./saveChecklist.js";
-import { evaluateChecklist } from "./evaluateChecklist.js";
+import { Checklist } from "./Checklist.js";
 
 (async () => {
   try {
-    const checklist = await generateChecklist();
-    await saveChecklist(checklist);
-    await evaluateChecklist(checklist);
+    const checklist = new Checklist();
+    await checklist.generate();
+    await checklist.save();
+    await checklist.evaluate();
   } catch (err) {
     console.error(err);
   }
